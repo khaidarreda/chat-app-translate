@@ -4,9 +4,3 @@ build:
     web: Dockerfile
 run:
   web: bundle exec puma -C config/puma.rb
-
-container_name: libretranslate
-
-restart: unless-stopped
-ports:
-  - 5000:5000
