@@ -19,5 +19,5 @@ RUN if [ "$with_models" = "true" ]; then  \
 # Install package from source code
 RUN pip install .
 
-EXPOSE 5000
+EXPOSE 80
 ENTRYPOINT [ "libretranslate", "--host", "0.0.0.0" ]
