@@ -17,7 +17,7 @@ RUN if [ "$with_models" = "true" ]; then  \
     fi
 
 # Install package from source code
-RUN pip install .
+RUN pip install -r requirements.txt --no-cache-dir
 
 EXPOSE 5000
 ENTRYPOINT [ "libretranslate", "--host", "0.0.0.0" ]
