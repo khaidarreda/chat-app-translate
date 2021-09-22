@@ -6,6 +6,6 @@ services:
     build: .
     restart: unless-stopped
     ports:
-      - 80:80
+      - 5000:5000
     ## Uncomment above command and define your args if necessary
     # command: --ssl --ga-id MY-GA-ID --req-limit 100 --char-limit 500 
