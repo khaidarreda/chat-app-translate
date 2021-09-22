@@ -1,6 +1,6 @@
 build:
+  container_name: libretranslate
   docker:
-    container_name: libretranslate
     web: Dockerfile
 run:
   web: bundle exec puma -C config/puma.rb
